@@ -1,0 +1,26 @@
+#:include kv/homescreen.kv
+#:include kv/bluetoothscreen.kv
+#:include kv/graph.kv
+#:include kv/datarate.kv
+#:include kv/btry.kv
+
+GridLayout:
+    cols: 1
+    ScreenManager:
+        id: screen_manager
+        HomeScreen:
+            name: "home_screen"
+            id: home_screen
+        BluetoothScreen:
+            name: "bluetooth_screen"
+            id: bluetooth_screen
+        GraphScreen:
+            name:"graph_screen"
+            id: graph_screen
+
+        DataRate:
+            name:"dater_screen"
+            id: dater_screen
+        Btry:
+            name: "btry_screen"
+            id: btry_screen
